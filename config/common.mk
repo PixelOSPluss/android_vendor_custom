@@ -61,6 +61,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/custom/prebuilt/common/etc/sysconfig/pixel_2016_exclusive.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/pixel_2016_exclusive.xml
 
+# App Lock Permissions
+PRODUCT_COPY_FILES += \
+    vendor/custom/config/permissions/privapp-permissions-settings.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-settings.xml
+
+
 # Overlay
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/custom/overlay/common
