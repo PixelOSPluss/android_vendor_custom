@@ -2,22 +2,12 @@ prebuilt_media {
     name: "bootanimation_pixelos",
     filename: "bootanimation.zip",
     product_specific: true,
-    src: select(soong_config_variable("vendor_custom", "bootanimation_res"), {
-        "720": "bootanimation_720.zip",
-        "1080": "bootanimation_1080.zip",
-        "1440": "bootanimation_1440.zip",
-        default: "bootanimation_1080.zip",
-    }),
+    src: "bootanimation_grizzly_2026.zip",
 }
 
 prebuilt_media {
     name: "bootanimation_dark_pixelos",
     filename: "bootanimation-dark.zip",
     product_specific: true,
-    src: select(soong_config_variable("vendor_custom", "bootanimation_res"), {
-        "720": "bootanimation_720.zip",
-        "1080": "bootanimation_dark_1080.zip",
-        "1440": "bootanimation_1440.zip",
-        default: "bootanimation_dark_1080.zip",
-    }),
+    src: "bootanimation_dark_grizzly_2026.zip",
 }

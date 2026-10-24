@@ -17,4 +17,10 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Whether the current device's internal display can host desktop sessions. -->
     <bool name="config_canInternalDisplayHostDesktops">true</bool>
+
+    <!-- Match Grizzly's Pixel tablet desktop and external display configuration. -->
+    <integer name="config_maxDesktopWindowingActiveTasks">8</integer>
+    <integer name="config_externalDisplayPeakWidth">3840</integer>
+    <integer name="config_externalDisplayPeakHeight">2160</integer>
+    <integer name="config_externalDisplayPeakRefreshRate">61</integer>
 </resources>
