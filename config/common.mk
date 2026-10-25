@@ -1,5 +1,12 @@
 # Common PixelOS stuff.
 
+# Bootanimation
+ifeq ($(strip $(TARGET_SCREEN_WIDTH)),)
+    $(warning "TARGET_SCREEN_WIDTH is undefined, assuming 1080p")
+else
+    $(call soong_config_set,vendor_custom,bootanimation_res,$(TARGET_SCREEN_WIDTH))
+endif
+
 PRODUCT_PACKAGES += \
     bootanimation_pixelos \
     bootanimation_dark_pixelos
